@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registeractivity">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="MissingConstraints">
+        <ImageView android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgFeeLogo"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="480dp"
+        android:layout_marginBottom="94dp"
+        android:background="@drawable/shape_right_panel"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"/>
+    <LinearLayout
+        android:id="@+id/lloginpanel"
+        android:layout_width="400dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/shape_login_panel"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        tools:ignore="MissingConstraints"
+        android:paddingTop="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        tools:layout_editor_absoluteX="53dp"
+        android:orientation="vertical">
+        <EditText
+            android:background="@drawable/custom_input"
+            android:hint="User name"
+            android:drawableStart="@drawable/user_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtUserName"/>
+
+        <EditText
+            android:background="@drawable/custom_input"
+            android:hint="Email"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/mail_foreground"
+            android:textColor="@color/black"
+            android:id="@+id/Email"
+            />
+        <EditText
+            android:background="@drawable/custom_input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="17dp"
+            android:layout_height="60dp"
+            android:id="@+id/edtPassword"
+            android:textColor="@color/black"
+            android:hint="Enter Password"
+            android:drawableStart="@drawable/key_foreground"
+            android:inputType="numberPassword"/>
+        <EditText
+            android:background="@drawable/custom_input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="18dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:id="@+id/password"
+            android:hint="Confirm Password"
+            android:drawableStart="@drawable/key_foreground"
+            android:inputType="numberPassword"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:text="Sign Up"
+        app:layout_constraintTop_toBottomOf="@id/lloginpanel"
+        android:id="@+id/btnSignup"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape_login_button"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lloginpanel"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:text="Login"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lloginpanel"
+        android:textSize="20sp"
+        android:layout_marginRight="40dp"
+        android:text="Sign Up"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
